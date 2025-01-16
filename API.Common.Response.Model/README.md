@@ -19,7 +19,25 @@ There is no need to register anything in the service collection. We have a coupl
 * ```NotFoundResponse``` is the response returned when the resource is not found.
 * ```ForbiddenResponse``` is the response sent when a client is not have access to a resource.
 * ```UnauthorizedResponse``` is the class returned when a request is unauthorized
-Check out the [Github Repository](https://github.com/ojotobar/APICommonResponseModels) to see the available methods implemented in each category
+Check out the [Github Repository](https://github.com/ojotobar/APICommonResponseModels) to see the implementations.
+
+```
+public async Task<ApiBaseResponse> GetAsync(Guid id)
+{
+	if(id == Guid.Empty)
+	{
+		return new BadRequestResponse("Invalid id")
+	}
+
+	var data = await _repository.GetDataAsync(id);
+	if(data == null)
+	{
+		return new NotFoundResponse("Record not found");
+	}
+
+	return new OkResponse<DataModel>(data);
+}
+```
 
 ## Links
 ***
