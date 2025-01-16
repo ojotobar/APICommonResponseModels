@@ -24,5 +24,5 @@ Check out the [Github Repository](https://github.com/ojotobar/APICommonResponseM
 ## Links
 ***
 To view the source code or get in touch:
-* [Github Repository Link](https://github.com/ojotobar/DRYMailjetClientLibrary)
+* [Github Repository Link](https://github.com/ojotobar/APICommonResponseModels)
 * [Send Me A Mail](mailto:ojotobar@gmail.com)
