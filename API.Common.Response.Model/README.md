@@ -19,6 +19,9 @@ There is no need to register anything in the service collection. We have a coupl
 * ```NotFoundResponse``` is the response returned when the resource is not found.
 * ```ForbiddenResponse``` is the response sent when a client is not have access to a resource.
 * ```UnauthorizedResponse``` is the class returned when a request is unauthorized
+* ```InternalServerErrorResponse``` included in verion `1.0.2` for unhandled exceptions.
+
+
 Check out the [Github Repository](https://github.com/ojotobar/APICommonResponseModels) to see the implementations.
 
 ```

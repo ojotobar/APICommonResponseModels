@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageId>API.Common.Response.Models</PackageId>
-	<Version>1.0.1</Version>
+	<Version>1.0.2</Version>
 	<PackageTags>Response;API;Exception</PackageTags>
 	<Authors>Ojo Toba Rufus</Authors>
 	<Description>
