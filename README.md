@@ -42,6 +42,27 @@ public async Task<ApiBaseResponse> GetAsync(Guid id)
 }
 ```
 
+### Return Responses
+
+```csharp
+//
+//Inherit the ApiControllerBase class in the controller instead of the ControllerBase class to use th ProcessError() method
+public class UserController : ApiBaseController
+{
+	// some codes removed
+
+	[HttpGet("{id}")]
+	public async Task<IActionResult> Get([FromRoute] Guid id)
+	{
+		var baseResult = await _service.GetById(id);
+		if (!baseResult.Success)
+			return ProcessError(baseResult);
+
+		return Ok(baseResult.GetResult<bool>());
+	}
+}
+```
+
 ## Links
 ***
 To view the source code or get in touch:
