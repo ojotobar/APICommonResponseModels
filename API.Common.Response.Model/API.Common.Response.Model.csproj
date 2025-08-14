@@ -8,7 +8,7 @@
 	<Authors>Ojo Toba R.</Authors>
 	<Company>Kwik Nesta Inc.</Company>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<Version>1.0.2</Version>
+	<Version>1.0.3</Version>
 	<PackageTags>Response;API;Exception</PackageTags>
 	<Description>
 		Extension library to make API response easier.
