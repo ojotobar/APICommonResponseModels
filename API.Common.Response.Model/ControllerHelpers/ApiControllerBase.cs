@@ -25,12 +25,12 @@ namespace API.Common.Response.Model.ControllerHelpers
                 UnauthorizedResponse => StatusCode(StatusCodes.Status401Unauthorized, new ErrorModel
                 {
                     Message = ((UnauthorizedResponse)baseResponse).Message,
-                    StatusCode = StatusCodes.Status400BadRequest
+                    StatusCode = StatusCodes.Status401Unauthorized
                 }),
                 ForbiddenResponse => StatusCode(StatusCodes.Status403Forbidden, new ErrorModel
                 {
                     Message = ((ForbiddenResponse)baseResponse).Message,
-                    StatusCode = StatusCodes.Status400BadRequest
+                    StatusCode = StatusCodes.Status403Forbidden
                 }),
                 _ => StatusCode(StatusCodes.Status501NotImplemented)
             };
